@@ -18,7 +18,7 @@ body {
     font-size: 20px; /* Font size of the button text */
     border: none; /* Remove default border */
     border-radius: 50px; /* Make the button oval-shaped */
-    background-color: #4CAF50; /* Button background color */
+    background-color:rgb(64, 157, 228); /* Button background color */
     color: white; /* Button text color */
     cursor: pointer; /* Pointer cursor on hover */
 }
