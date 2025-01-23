@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="login-style.css">
 </head>
 <body>
-    <div class="login-container">
+    <!--Login Form Container-->
+    <div class="Login-Container">
         <h2>Login</h2>
-        <form action="/login" method="post">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+        <!--Username Input Box-->
+        <div class="input-box">
+            <input type="text" required placeholder="" />
+            <label for="username">Username</label>
+        </div>
+        <!--Password Input Box-->
+        <div class="input-box">
+            <input type="password" required placeholder="" />
+            <label for="password">Password</label>
+        </div>
+        <!--Login Button-->
+        <button class="login-button">Login</button>
+        <!--Forgot Password Link-->
+        <a href="#" class="forgot-password">Forgot Password</a>
     </div>
 </body>
 </html>
