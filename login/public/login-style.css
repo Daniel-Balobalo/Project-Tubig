@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.login-container {
+.Login-Container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -21,25 +21,42 @@ h2 {
     margin-bottom: 20px;
 }
 
-.input-group {
+.input-box {
+    position: relative;
     margin-bottom: 15px;
     text-align: left;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
+.input-box input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none;
 }
 
-button {
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 5px;
+    color: #aaa;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    color: #007BFF;
+    font-size: 12px;
+}
+
+.login-button {
     width: 100%;
     padding: 10px;
     background-color: #007BFF;
@@ -48,8 +65,20 @@ button {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-button:hover {
+.login-button:hover {
     background-color: #0056b3;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }
