@@ -1,4 +1,3 @@
-/*Content Below*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -29,6 +28,12 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -53,6 +58,7 @@ main {
     border-radius: 4px;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .product-card button:hover {
