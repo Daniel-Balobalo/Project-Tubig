@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Login Form Container-->
     <div class="Login-Container">
         <h2>Login</h2>
-        <!--Username Input Box-->
         <div class="input-box">
-            <input type="text" required placeholder="" />
+            <input type="text" id="username" required placeholder="" />
             <label for="username">Username</label>
         </div>
-        <!--Password Input Box-->
         <div class="input-box">
-            <input type="password" required placeholder="" />
+            <input type="password" id="password" required placeholder="" />
             <label for="password">Password</label>
         </div>
-        <!--Login Button-->
-        <button class="login-button">Login</button>
-        <!--Forgot Password Link-->
+        <button class="login-button" onclick="validateLogin()">Login</button>
         <a href="#" class="forgot-password">Forgot Password</a>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
