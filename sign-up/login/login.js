@@ -1,12 +1,13 @@
-function validateLogin() {
+// sign-up/login/login.js
+document.getElementById('loginButton').addEventListener('click', function() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Basic validation
-    if (username === 'admin' && password === 'password') {
-        alert('Login successful!');
-        window.location.href = '../dashboard/dashboard.html'; // Redirect to dashboard
+    if (username === '' || password === '') {
+        alert('Please fill in all fields.');
     } else {
-        alert('Invalid username or password');
+        alert('Login successful!');
+        // Redirect to dashboard or another page
+        window.location.href = '../../dashboard/dashboard.html';
     }
-}
+});
