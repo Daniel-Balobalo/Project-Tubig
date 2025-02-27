@@ -23,6 +23,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
